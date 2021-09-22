@@ -1,0 +1,9 @@
+sh cdp neighbors
+sh run router isis  core int Te0/0/0/6
+configure
+no router isis  core int Te0/0/0/6
+commit
+exit
+sh run router isis  core int Te0/0/0/6
+show configuration commit changes last 1
+rollback configuration last 1

@@ -1,0 +1,39 @@
+testbed:
+  name: LAB_VIMERCATE
+  credentials:
+    default:
+      username: root
+      password: "%ENC{gAAAAABhQvlE12RbDjYfotUkMBlL4TgXHwOQsr2lHNOLfRJLH8VLy3QsN8vdSStAz7BEyDmc2RnUxakajUHDA8FS2rQ55mBwEA==}"
+
+devices:
+  Paris-26:
+    type: router
+    os: iosxr
+    connections:
+      vty:
+        protocol: ssh
+        host: 10.58.244.26
+        arguments:
+          init_config_commands: [ ]
+          init_exec_commands: [ ]
+  Bordeaux-33:
+    type: router
+    os: iosxr
+    connections:
+      vty:
+        protocol: ssh
+        host: 10.58.244.33
+        arguments:
+          init_config_commands: [ ]
+          init_exec_commands: [ ]
+
+  Lyon-23:
+    type: router
+    os: iosxr
+    connections:
+      vty:
+        protocol: ssh
+        host: 10.58.244.23
+        arguments:
+          init_config_commands: [ ]
+          init_exec_commands: [ ]

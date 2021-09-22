@@ -1,0 +1,3 @@
+pyats learn isis --testbed-file testbed_sr.yaml --devices Bordeaux-33 --output output_isis_1
+pyats learn isis --testbed-file testbed_sr.yaml --devices Bordeaux-33 --output output_isis_2
+genie diff output_isis_1 output_isis_2 --exclude 'start_timestamp' 'remaining_lifetime' 'lsp_log' 'spf_log' 'packet_counters' 'hold_timer'
